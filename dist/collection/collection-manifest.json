@@ -1,0 +1,987 @@
+{
+  "components": [
+    {
+      "tag": "demo-profile-store",
+      "dependencies": [
+        "tag-pay-profile-final"
+      ],
+      "componentClass": "DemoProfileStore",
+      "componentPath": "components/demo-profile-store/demo-profile-store.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/demo-profile-store/demo-profile-store.scss"
+          ]
+        }
+      },
+      "states": [
+        {
+          "name": "st"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "payProfileChange",
+          "method": "payProfileChangeHandler",
+          "passive": false,
+          "capture": false
+        }
+      ]
+    },
+    {
+      "tag": "tag-access-logo",
+      "dependencies": [],
+      "componentClass": "TagAccessLogo",
+      "componentPath": "components/tag-access-logo/tag-access-logo.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-access-logo/tag-access-logo.scss"
+          ]
+        }
+      },
+      "shadow": true
+    },
+    {
+      "tag": "tag-avatar",
+      "dependencies": [],
+      "componentClass": "TagAvatar",
+      "componentPath": "components/tag-avatar/tag-avatar.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-avatar/tag-avatar.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        },
+        {
+          "name": "size",
+          "type": "String",
+          "attr": "size"
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "attr": "src"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-badge",
+      "dependencies": [],
+      "componentClass": "TagBadge",
+      "componentPath": "components/tag-badge/tag-badge.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-badge/tag-badge.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-button",
+      "dependencies": [],
+      "componentClass": "TagButton",
+      "componentPath": "components/tag-button/tag-button.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-button/tag-button.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        },
+        {
+          "name": "size",
+          "type": "String",
+          "attr": "size"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-card",
+      "dependencies": [],
+      "componentClass": "TagCard",
+      "componentPath": "components/tag-card/tag-card.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-card/tag-card.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-card-doc",
+      "dependencies": [
+        "tag-card",
+        "tag-text"
+      ],
+      "componentClass": "TagCardDoc",
+      "componentPath": "components/tag-card-doc/tag-card-doc.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-card-doc/tag-card-doc.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "action",
+          "type": "String",
+          "attr": "action"
+        },
+        {
+          "name": "heading",
+          "type": "String",
+          "attr": "heading"
+        },
+        {
+          "name": "when",
+          "type": "String",
+          "attr": "when"
+        },
+        {
+          "name": "who",
+          "type": "String",
+          "attr": "who"
+        },
+        {
+          "name": "whoref",
+          "type": "String",
+          "attr": "whoref"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-card-finance",
+      "dependencies": [
+        "tag-card",
+        "tag-icon-set",
+        "tag-text"
+      ],
+      "componentClass": "TagCardDocFinance",
+      "componentPath": "components/tag-card-finance/tag-card-finance.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-card-finance/tag-card-finance.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "heading",
+          "type": "String",
+          "attr": "heading"
+        },
+        {
+          "name": "icon",
+          "type": "String",
+          "attr": "icon"
+        },
+        {
+          "name": "message",
+          "type": "String",
+          "attr": "message"
+        },
+        {
+          "name": "status",
+          "type": "String",
+          "attr": "status"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-card-header",
+      "dependencies": [
+        "tag-card",
+        "tag-text"
+      ],
+      "componentClass": "TagCardHeader",
+      "componentPath": "components/tag-card-header/tag-card-header.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-card-header/tag-card-header.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "heading",
+          "type": "String",
+          "attr": "heading"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-card-task",
+      "dependencies": [
+        "tag-avatar",
+        "tag-card",
+        "tag-icon-set",
+        "tag-text"
+      ],
+      "componentClass": "TagCardTask",
+      "componentPath": "components/tag-card-task/tag-card-task.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-card-task/tag-card-task.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        },
+        {
+          "name": "avatarplaceholder",
+          "type": "String",
+          "attr": "avatarplaceholder"
+        },
+        {
+          "name": "avatarsrc",
+          "type": "String",
+          "attr": "avatarsrc"
+        },
+        {
+          "name": "heading",
+          "type": "String",
+          "attr": "heading"
+        },
+        {
+          "name": "subtitle",
+          "type": "String",
+          "attr": "subtitle"
+        },
+        {
+          "name": "when",
+          "type": "String",
+          "attr": "when"
+        },
+        {
+          "name": "who",
+          "type": "String",
+          "attr": "who"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-card-widget",
+      "dependencies": [
+        "tag-button",
+        "tag-card",
+        "tag-icon-set",
+        "tag-text"
+      ],
+      "componentClass": "TagCardWidget",
+      "componentPath": "components/tag-card-widget/tag-card-widget.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-card-widget/tag-card-widget.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        },
+        {
+          "name": "applicationicon",
+          "type": "String",
+          "attr": "applicationicon"
+        },
+        {
+          "name": "applicationimage",
+          "type": "String",
+          "attr": "applicationimage"
+        },
+        {
+          "name": "applicationname",
+          "type": "String",
+          "attr": "applicationname"
+        },
+        {
+          "name": "buttonclick",
+          "attr": "buttonclick"
+        },
+        {
+          "name": "buttonicon",
+          "type": "String",
+          "attr": "buttonicon"
+        },
+        {
+          "name": "buttontext",
+          "type": "String",
+          "attr": "buttontext"
+        },
+        {
+          "name": "description",
+          "type": "String",
+          "attr": "description"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-datepicker",
+      "dependencies": [
+        "tag-text"
+      ],
+      "componentClass": "TagDatepicker",
+      "componentPath": "components/tag-datepicker/tag-datepicker.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "id",
+          "type": "String",
+          "attr": "id"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        }
+      ],
+      "states": [
+        {
+          "name": "datepicker"
+        },
+        {
+          "name": "inputId"
+        },
+        {
+          "name": "visible"
+        }
+      ],
+      "methods": [
+        {
+          "name": "componentWillLoad"
+        }
+      ]
+    },
+    {
+      "tag": "tag-form",
+      "dependencies": [],
+      "componentClass": "TagFormGroup",
+      "componentPath": "components/tag-form/tag-form.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-form/tag-form.scss"
+          ]
+        }
+      },
+      "shadow": true
+    },
+    {
+      "tag": "tag-form-group",
+      "dependencies": [
+        "tag-text"
+      ],
+      "componentClass": "TagFormGroup",
+      "componentPath": "components/tag-form-group/tag-form-group.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-form-group/tag-form-group.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ]
+    },
+    {
+      "tag": "tag-form-group-select",
+      "dependencies": [
+        "tag-text"
+      ],
+      "componentClass": "TagFormGroupSelect",
+      "componentPath": "components/tag-form-group-select/tag-form-group-select.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-form-group-select/tag-form-group-select.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        }
+      ]
+    },
+    {
+      "tag": "tag-icon-set",
+      "dependencies": [],
+      "componentClass": "TagIconSet",
+      "componentPath": "components/tag-icon-set/tag-icon-set.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-icon-set/tag-icon-set.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        },
+        {
+          "name": "icon",
+          "type": "String",
+          "attr": "icon"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-input",
+      "dependencies": [],
+      "componentClass": "TagInput",
+      "componentPath": "components/tag-input/tag-input.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-input/tag-input.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attr": "disabled"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        }
+      ]
+    },
+    {
+      "tag": "tag-input-checkbox",
+      "dependencies": [],
+      "componentClass": "TagInputCheckbox",
+      "componentPath": "components/tag-input-checkbox/tag-input-checkbox.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-input-checkbox/tag-input-checkbox.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "attr": "checked"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        }
+      ]
+    },
+    {
+      "tag": "tag-input-group",
+      "dependencies": [
+        "tag-input"
+      ],
+      "componentClass": "TagInputGroup",
+      "componentPath": "components/tag-input-group/tag-input-group.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-input-group/tag-input-group.scss"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "tag-k-grid",
+      "dependencies": [],
+      "componentClass": "TagKGrid",
+      "componentPath": "components/tag-k-grid/tag-k-grid.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-k-grid/tag-k-grid.scss"
+          ]
+        }
+      },
+      "states": [
+        {
+          "name": "config"
+        },
+        {
+          "name": "parent"
+        }
+      ],
+      "methods": [
+        {
+          "name": "init"
+        }
+      ],
+      "events": [
+        {
+          "event": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "tag-kendo-form-group-select",
+      "dependencies": [
+        "tag-text"
+      ],
+      "componentClass": "TagKendoFormGroupSelect",
+      "componentPath": "components/tag-kendo-form-group-select/tag-kendo-form-group-select.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-kendo-form-group-select/tag-kendo-form-group-select.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-layout",
+      "dependencies": [],
+      "componentClass": "TagLayout",
+      "componentPath": "components/tag-layout/tag-layout.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-layout/tag-layout.scss"
+          ]
+        }
+      },
+      "shadow": true
+    },
+    {
+      "tag": "tag-layout-flex-columns",
+      "dependencies": [],
+      "componentClass": "TagLayoutFlexColumns",
+      "componentPath": "components/tag-layout-flex-columns/tag-layout-flex-columns.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-layout-flex-columns/tag-layout-flex-columns.scss"
+          ]
+        }
+      },
+      "shadow": true
+    },
+    {
+      "tag": "tag-layout-sidenav",
+      "dependencies": [
+        "tag-icon-set"
+      ],
+      "componentClass": "TagLayoutSidenav",
+      "componentPath": "components/tag-layout-sidenav/tag-layout-sidenav.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-layout-sidenav/tag-layout-sidenav.scss"
+          ]
+        }
+      },
+      "states": [
+        {
+          "name": "showMenu"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-main-header",
+      "dependencies": [],
+      "componentClass": "TagMainHeader",
+      "componentPath": "components/tag-main-header/tag-main-header.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-main-header/tag-main-header.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-menu-item",
+      "dependencies": [
+        "tag-icon-set"
+      ],
+      "componentClass": "TagButton",
+      "componentPath": "components/tag-menu-item/tag-menu-item.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-menu-item/tag-menu-item.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "i",
+          "type": "String",
+          "attr": "i"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-message",
+      "dependencies": [],
+      "componentClass": "TagMessage",
+      "componentPath": "components/tag-message/tag-message.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-message/tag-message.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "accent",
+          "type": "String",
+          "attr": "accent"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-navbar",
+      "dependencies": [],
+      "componentClass": "TagNavbar",
+      "componentPath": "components/tag-navbar/tag-navbar.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-navbar/tag-navbar.scss"
+          ]
+        }
+      },
+      "shadow": true
+    },
+    {
+      "tag": "tag-pay-profile-final",
+      "dependencies": [
+        "tag-card",
+        "tag-card-header",
+        "tag-datepicker",
+        "tag-form-group",
+        "tag-form-group-select",
+        "tag-main-header",
+        "tag-pay-working-pattern",
+        "tag-profile",
+        "tag-text",
+        "tag-three-col-layout"
+      ],
+      "componentClass": "TagPayProfileFinal",
+      "componentPath": "components/tag-pay-profile-final/tag-pay-profile-final.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-pay-profile-final/tag-pay-profile-final.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "vm",
+          "attr": "vm"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "change",
+          "method": "test",
+          "passive": false,
+          "capture": false
+        },
+        {
+          "event": "workingPatternWeekChange",
+          "method": "workingPatternWeekChangeHandler",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "events": [
+        {
+          "event": "payProfileChange"
+        }
+      ]
+    },
+    {
+      "tag": "tag-pay-working-pattern",
+      "dependencies": [
+        "tag-pay-wp"
+      ],
+      "componentClass": "TagPayWorkingPattern",
+      "componentPath": "components/tag-pay-working-pattern/tag-pay-working-pattern.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-pay-working-pattern/tag-pay-working-pattern.scss"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "tag-pay-wp",
+      "dependencies": [
+        "tag-button"
+      ],
+      "componentClass": "TagPayWp",
+      "componentPath": "components/tag-pay-wp/tag-pay-wp.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-pay-wp/tag-pay-wp.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "dayofweek",
+          "type": "String",
+          "attr": "dayofweek"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ],
+      "states": [
+        {
+          "name": "payWpMachine"
+        },
+        {
+          "name": "state"
+        },
+        {
+          "name": "workingPattern"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-profile",
+      "dependencies": [
+        "tag-icon-set",
+        "tag-text"
+      ],
+      "componentClass": "TagProfile",
+      "componentPath": "components/tag-profile/tag-profile.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-profile/tag-profile.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "dob",
+          "type": "String",
+          "attr": "dob"
+        },
+        {
+          "name": "gender",
+          "type": "String",
+          "attr": "gender"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        },
+        {
+          "name": "nationality",
+          "type": "String",
+          "attr": "nationality"
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "attr": "src"
+        }
+      ],
+      "events": [
+        {
+          "event": "editProfileImage"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-tabs",
+      "dependencies": [],
+      "componentClass": "TagTabs",
+      "componentPath": "components/tag-tabs/tag-tabs.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-tabs/tag-tabs.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "tabs",
+          "attr": "tabs"
+        }
+      ]
+    },
+    {
+      "tag": "tag-text",
+      "dependencies": [],
+      "componentClass": "TagText",
+      "componentPath": "components/tag-text/tag-text.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-text/tag-text.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "inline",
+          "type": "Boolean",
+          "attr": "inline"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "attr": "type"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "tag-three-col-layout",
+      "dependencies": [],
+      "componentClass": "TagThreeColLayout",
+      "componentPath": "components/tag-three-col-layout/tag-three-col-layout.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/tag-three-col-layout/tag-three-col-layout.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "p1",
+          "type": "String",
+          "attr": "p-1"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.7.9",
+    "typescriptVersion": "2.8.1"
+  },
+  "bundles": []
+}

@@ -1,0 +1,20 @@
+:host {
+  text-align: center; }
+  :host hr {
+    border-top: 1px solid #dbe0e5; }
+  :host .prof__img {
+    display: inline-block;
+    height: 230px;
+    width: 230px;
+    background-color: #009999;
+    border-radius: 115px;
+    position: relative; }
+  :host .prof__edit {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    border-radius: 23px;
+    background-color: #009999;
+    right: 0;
+    bottom: 30px;
+    cursor: pointer; }

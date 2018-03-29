@@ -1,0 +1,11 @@
+:host {
+  display: inline-block; }
+
+.paywp {
+  display: inline-block;
+  width: 100px; }
+  .paywp__button {
+    margin-bottom: 20px; }
+  .paywp__container {
+    display: flex;
+    flex-direction: column; }

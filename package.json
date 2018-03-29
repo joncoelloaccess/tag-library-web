@@ -1,0 +1,74 @@
+{
+  "name": "tag-library",
+  "version": "1.0.0",
+  "description": "The Access Group web component library and demo site",
+  "scripts": {
+    "start": "npm run dev",
+    "build.site": "stencil build --config stencil.demo-app.config.js",
+    "build.lib": "stencil build --config stencil.tag-library.config.js",
+    "build.lib.watch": "stencil build --watch --config stencil.tag-library.config.js",
+    "build.bundlesize": "bundlesize",
+    "predev": "stencil build --dev --config stencil.tag-library.config.js",
+    "dev": "sd concurrent \"stencil build --dev --watch --config stencil.tag-library.config.js\" \"node server.js\"",
+    "test": "jest",
+    "test.watch": "jest --watchAll",
+    "docs": "stencil docs --config stencil.demo-app.config.js",
+    "icon.build": "node utils/icon-set-builder/src/app/index.js",
+    "comp.new": "node utils/component-generator/index.js --path src/components"
+  },
+  "main": "dist/tag-library.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@stencil/core": "^0.7.7",
+    "@stencil/router": "0.0.28",
+    "bootstrap-sass": "^3.3.7",
+    "glob": "^7.1.2",
+    "js-beautify": "^1.7.5",
+    "random-id": "0.0.2",
+    "serve": "^6.5.2"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.3",
+    "@stencil/utils": "latest",
+    "@types/jest": "^21.1.1",
+    "bundlesize": "^0.16.0",
+    "cash-true": "0.0.2",
+    "command-line-args": "^5.0.1",
+    "concurrently": "^3.5.1",
+    "jest": "^21.2.1",
+    "node-watch": "^0.5.6",
+    "pixelmatch": "^4.0.2",
+    "tap": "^11.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/stencil-app-starter.git"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/dist/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/*"
+    }
+  ]
+}

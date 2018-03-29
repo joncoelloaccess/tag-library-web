@@ -1,0 +1,11 @@
+@supports (display: flex) {
+  @media screen and (min-width: 768px) {
+    :host {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 100%; } }
+  ::slotted(*) {
+    flex: 1 1 40%;
+    box-sizing: border-box;
+    padding: 10px !important; } }

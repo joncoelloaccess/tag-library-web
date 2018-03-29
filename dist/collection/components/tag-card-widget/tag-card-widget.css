@@ -1,0 +1,29 @@
+.wgt {
+  display: flex;
+  flex-flow: row;
+  padding: 0 10px 0 14px; }
+  .wgt__app-image {
+    width: 48px;
+    height: 48px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    margin: 0 auto 35px; }
+
+.left {
+  flex: 1 1 auto; }
+  .left * {
+    display: block; }
+  .left tag-text[type="feature"] {
+    line-height: 30px;
+    margin: 5px 0; }
+
+.right {
+  flex: 0 0 auto; }
+  .right tag-text[type="feature"] {
+    color: #aaaab1;
+    line-height: 30px; }
+  .right tag-icon-set {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 35px; }

@@ -1,0 +1,73 @@
+:host {
+  width: 100%;
+  box-sizing: border-box; }
+  :host .card {
+    background: #fff;
+    padding: 10px 14px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #dbe0e5;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; }
+  :host .card-access {
+    border-left: 4px solid #e5173f; }
+  :host .card-shiraz {
+    border-left: 4px solid #b00836; }
+  :host .card-fountain-blue {
+    border-left: 4px solid #53b8b4; }
+  :host .card-viridian-green {
+    border-left: 4px solid #009999; }
+  :host .card-atoll {
+    border-left: 4px solid #036d83; }
+  :host .card-midnight-blue {
+    border-left: 4px solid #373a65; }
+  :host .card-pink {
+    border-left: 4px solid #e37086; }
+  :host .card-lilac {
+    border-left: 4px solid #c688c5; }
+  :host .card-purple {
+    border-left: 4px solid #6c4290; }
+  :host .card-turquoise {
+    border-left: 4px solid #60b9cb; }
+  :host .card-glacier {
+    border-left: 4px solid #8bc7cb; }
+  :host .card-dark-green {
+    border-left: 4px solid #5c9068; }
+  :host .card-light-green {
+    border-left: 4px solid #5ba46c; }
+  :host .card-gold {
+    border-left: 4px solid #dda441; }
+  :host .card-orange {
+    border-left: 4px solid #f9a411; }
+  :host .card-yellow {
+    border-left: 4px solid #dfc24f; }
+  :host .card-light-brown {
+    border-left: 4px solid #a38854; }
+  :host .card-dark-brown {
+    border-left: 4px solid #655237; }
+  :host .card-title-text {
+    border-left: 4px solid #4c4f53; }
+  :host .card-default-text {
+    border-left: 4px solid #7e7e81; }
+  :host .card-subtitles {
+    border-left: 4px solid #aaaab1; }
+  :host .card-borders {
+    border-left: 4px solid #dbe0e5; }
+  :host .card-toolbars {
+    border-left: 4px solid #e9ecee; }
+  :host .card-selected {
+    border-left: 4px solid #e2ecef; }
+  :host .card-page-master {
+    border-left: 4px solid #ffffff; }
+  :host .card-grey-1 {
+    border-left: 4px solid #2c2e31; }
+  :host .card-grey-2 {
+    border-left: 4px solid #373737; }
+  :host .card-grey-3 {
+    border-left: 4px solid #808080; }
+  :host .card-grey-4 {
+    border-left: 4px solid #bdbdbd; }
+  :host .card-grey-5 {
+    border-left: 4px solid #dfdede; }

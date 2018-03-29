@@ -1,0 +1,93 @@
+:host aside {
+  background-color: #eef0f2;
+  border-left: 2px solid #7e7e81; }
+
+:host .aside-access {
+  border-left: 2px solid #e5173f; }
+
+:host .aside-shiraz {
+  border-left: 2px solid #b00836; }
+
+:host .aside-fountain-blue {
+  border-left: 2px solid #53b8b4; }
+
+:host .aside-viridian-green {
+  border-left: 2px solid #009999; }
+
+:host .aside-atoll {
+  border-left: 2px solid #036d83; }
+
+:host .aside-midnight-blue {
+  border-left: 2px solid #373a65; }
+
+:host .aside-pink {
+  border-left: 2px solid #e37086; }
+
+:host .aside-lilac {
+  border-left: 2px solid #c688c5; }
+
+:host .aside-purple {
+  border-left: 2px solid #6c4290; }
+
+:host .aside-turquoise {
+  border-left: 2px solid #60b9cb; }
+
+:host .aside-glacier {
+  border-left: 2px solid #8bc7cb; }
+
+:host .aside-dark-green {
+  border-left: 2px solid #5c9068; }
+
+:host .aside-light-green {
+  border-left: 2px solid #5ba46c; }
+
+:host .aside-gold {
+  border-left: 2px solid #dda441; }
+
+:host .aside-orange {
+  border-left: 2px solid #f9a411; }
+
+:host .aside-yellow {
+  border-left: 2px solid #dfc24f; }
+
+:host .aside-light-brown {
+  border-left: 2px solid #a38854; }
+
+:host .aside-dark-brown {
+  border-left: 2px solid #655237; }
+
+:host .aside-title-text {
+  border-left: 2px solid #4c4f53; }
+
+:host .aside-default-text {
+  border-left: 2px solid #7e7e81; }
+
+:host .aside-subtitles {
+  border-left: 2px solid #aaaab1; }
+
+:host .aside-borders {
+  border-left: 2px solid #dbe0e5; }
+
+:host .aside-toolbars {
+  border-left: 2px solid #e9ecee; }
+
+:host .aside-selected {
+  border-left: 2px solid #e2ecef; }
+
+:host .aside-page-master {
+  border-left: 2px solid #ffffff; }
+
+:host .aside-grey-1 {
+  border-left: 2px solid #2c2e31; }
+
+:host .aside-grey-2 {
+  border-left: 2px solid #373737; }
+
+:host .aside-grey-3 {
+  border-left: 2px solid #808080; }
+
+:host .aside-grey-4 {
+  border-left: 2px solid #bdbdbd; }
+
+:host .aside-grey-5 {
+  border-left: 2px solid #dfdede; }
